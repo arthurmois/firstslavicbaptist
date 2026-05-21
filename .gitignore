@@ -1,0 +1,12 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Original, unoptimized source assets — never served
+originals/
+
+# Dependencies (none required, but ignored if ever added)
+node_modules/
+
+# Local tooling / editor state
+.claude/
