@@ -10,3 +10,4 @@ node_modules/
 
 # Local tooling / editor state
 .claude/
+.gstack/
