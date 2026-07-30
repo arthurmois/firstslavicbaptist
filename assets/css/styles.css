@@ -317,8 +317,15 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 18px); }
   text-transform: uppercase; color: var(--slate);
 }
 .info-row .detail { font-size: 1.04rem; color: var(--ink); font-weight: 500; }
-.info-row a.detail { text-decoration: none; }
-.info-row a.detail:hover { color: var(--raspberry); }
+.info-row a.detail {
+  color: var(--raspberry);
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.info-row a.detail::after { content: "\2197"; margin-left: 4px; font-size: 0.85em; }
+.info-row a.detail:hover { color: var(--raspberry-dark); text-decoration-color: currentColor; }
 .visit-info .btn { margin-top: 1.6rem; }
 
 .map-embed {
