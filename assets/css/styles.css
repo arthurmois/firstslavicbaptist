@@ -237,7 +237,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 18px); }
 }
 
 .feature-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem;
 }
 .feature-card {
   padding: 2rem 1.6rem; background: var(--white);
